@@ -1,0 +1,196 @@
+{
+  "api_base": "https://freehire.me/api/v1",
+  "lookback_days": 45,
+  "max_per_query": 60,
+  "notify_mac": false,
+  "locations": {
+    "countries": [
+      "TR",
+      "SA",
+      "AE",
+      "QA"
+    ],
+    "cities": [
+      "Istanbul",
+      "Riyadh",
+      "Jeddah",
+      "Dubai",
+      "Abu Dhabi",
+      "Doha"
+    ],
+    "allow_remote_unknown": true,
+    "allow_other": false,
+    "accept_location_unknown": false
+  },
+  "exclude_title_contains": [
+    "intern",
+    "graduate program",
+    "junior",
+    "research scientist",
+    "software engineer",
+    "data entry"
+  ],
+  "searches": [
+    {
+      "name": "AI & Digital Transformation",
+      "queries": [
+        "AI Transformation",
+        "Digital Transformation",
+        "Head of AI",
+        "AI Strategy"
+      ]
+    },
+    {
+      "name": "Strategy & CEO Office",
+      "queries": [
+        "Chief of Staff",
+        "Strategy Director",
+        "Corporate Development",
+        "Strategic Projects"
+      ]
+    },
+    {
+      "name": "Commercial & Partnerships",
+      "queries": [
+        "Commercial Director",
+        "Growth Director",
+        "Partnerships Director",
+        "Business Development Director"
+      ]
+    },
+    {
+      "name": "Operations & General Management",
+      "queries": [
+        "General Manager",
+        "Business Operations",
+        "COO",
+        "Business Excellence"
+      ]
+    },
+    {
+      "name": "Product, Telco & Customer",
+      "queries": [
+        "Product Director",
+        "Customer Success Director",
+        "Telco Consulting",
+        "Customer Experience Director"
+      ]
+    },
+    {
+      "name": "Turkish leadership",
+      "queries": [
+        "Dijital Dönüşüm Direktörü",
+        "Yapay Zeka Direktörü",
+        "Strateji Direktörü",
+        "İş Geliştirme Direktörü",
+        "Genel Müdür"
+      ]
+    },
+    {
+      "name": "Custom",
+      "queries": []
+    }
+  ],
+  "ats_boards": [
+    {
+      "provider": "greenhouse",
+      "board": "openai",
+      "company": "OpenAI",
+      "enabled": false
+    },
+    {
+      "provider": "lever",
+      "board": "example-company",
+      "company": "Example",
+      "enabled": false
+    },
+    {
+      "provider": "ashby",
+      "board": "example-company",
+      "company": "Example",
+      "enabled": false
+    }
+  ],
+  "llm": {
+    "enabled": true,
+    "provider": "ollama_local",
+    "base_url": "http://127.0.0.1:11434",
+    "model": "qwen3:8b",
+    "num_ctx": 32768,
+    "max_output_tokens": 6500,
+    "allow_cloud": false
+  },
+  "auto_evaluate": {
+    "enabled": false
+  },
+  "sources": {
+    "freehire": true,
+    "himalayas": true,
+    "jobicy": true
+  },
+  "max_queries_per_scan": 35,
+  "interest": {
+    "strict_title_match": true,
+    "include_any": [
+      "ai transformation",
+      "head of ai",
+      "ai strategy",
+      "artificial intelligence director",
+      "digital transformation",
+      "chief of staff",
+      "strategy director",
+      "director strategy",
+      "corporate development",
+      "strategic projects",
+      "commercial director",
+      "growth director",
+      "partnerships director",
+      "strategic partnerships",
+      "business development director",
+      "general manager",
+      "managing director",
+      "business operations",
+      "business excellence",
+      "chief operating officer",
+      "chief commercial officer",
+      "chief growth officer",
+      "director product",
+      "product director",
+      "head of product",
+      "customer success director",
+      "vp customer success",
+      "telco consulting",
+      "customer experience director",
+      "country manager",
+      "director of ai",
+      "digital transformation director",
+      "vp strategic partnerships",
+      "commercial growth director",
+      "yapay zeka",
+      "yapay zekâ",
+      "dijital dönüşüm",
+      "strateji direktörü",
+      "iş geliştirme direktörü",
+      "ticari büyüme",
+      "genel müdür",
+      "ürün direktörü",
+      "müşteri deneyimi direktörü",
+      "operasyon direktörü",
+      "stratejik iş ortaklıkları"
+    ],
+    "exclude_any": [
+      "human resources",
+      "hr business",
+      "recruiting",
+      "talent acquisition",
+      "intern",
+      "graduate",
+      "junior",
+      "software engineer",
+      "research scientist",
+      "accountant",
+      "nursing",
+      "retail store manager"
+    ]
+  }
+}
